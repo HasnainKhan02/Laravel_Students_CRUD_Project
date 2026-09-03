@@ -50,7 +50,7 @@ class StudentController extends Controller
 
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:students,email,' . $student->id, // Unique check exception for current student
+            'email' => 'required|email|unique:students,email,' . $student->id, 
             'university' => 'required|string|max:255',
             'department' => 'required|string|max:255',
             'subject' => 'required|string|max:255',
