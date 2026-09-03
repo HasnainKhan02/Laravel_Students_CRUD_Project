@@ -11,7 +11,7 @@
 
 <body class="bg-slate-950 text-slate-100 min-h-screen p-6">
     <div class="max-w-7xl mx-auto">
-        <!-- Header & Action Button -->
+       
         <div class="flex items-center justify-between mb-6">
             <h1 class="text-3xl font-bold text-blue-500">Students Dashboard</h1>
             <a href="{{ route('students.create') }}"
@@ -20,14 +20,14 @@
             </a>
         </div>
 
-        <!-- Success Message -->
+      
         @if (session('success'))
             <div class="mb-6 p-4 bg-green-500/10 border border-green-500 text-green-400 text-sm rounded-xl text-center">
                 {{ session('success') }}
             </div>
         @endif
 
-        <!-- Table Container -->
+     
         <div class="overflow-x-auto bg-slate-900 border border-slate-800 rounded-xl shadow-xl">
             <table class="w-full text-left border-collapse">
                 <thead>
