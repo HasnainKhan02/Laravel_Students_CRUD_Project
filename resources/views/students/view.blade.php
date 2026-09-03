@@ -62,7 +62,6 @@
             </div>
         </div>
 
-        <!-- Card Footer Actions -->
         <div class="p-4 bg-slate-800/30 border-t border-slate-800 flex justify-end gap-3">
             <a href="{{ route('students.edit', $student->id) }}" 
                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow transition">
