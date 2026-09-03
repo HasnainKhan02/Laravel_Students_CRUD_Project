@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
+
+// 1. Form page render karne ke liye
+Route::get('/', [StudentController::class, 'create'])->name('students.create');
+
+// 2. Form submit (Data Save) karne ke liye POST method
+Route::post('/store', [StudentController::class, 'store'])->name('students.store');
+
+Route::get('/dashboard', [StudentController::class, 'index'])->name('students.dashboard');
+// Edit Page Route (GET)
+Route::get('/students/{id}/edit', [StudentController::class, 'edit'])->name('students.edit');
+
+// Update Action Route (PUT/PATCH)
+Route::put('/students/{id}', [StudentController::class, 'update'])->name('students.update');
+Route::delete('/students/delete/{id}', [StudentController::class, 'destroy'])->name('students.delete');
+
+Route::get('/students/view/{id}' , [StudentController::class , 'view'])->name('students.view');
