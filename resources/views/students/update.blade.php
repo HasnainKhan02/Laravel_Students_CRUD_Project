@@ -15,7 +15,7 @@
 
         <form action="{{ route('students.update', $student->id) }}" method="POST" class="flex flex-col gap-4">
             @csrf
-            @method('PUT') <!-- Laravel update operation ke liye PUT/PATCH directive required hai -->
+            @method('PUT') 
 
             <!-- Name -->
             <div class="flex flex-col text-left gap-1">
